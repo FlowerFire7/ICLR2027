@@ -1,0 +1,49 @@
+\begin{table}[h]\centering\small
+\caption{\textbf{Supplementary Table S1 (pre-fix stream; interpret lag-0 ordering only).} Qwen3-0.6B, 50 repositories, shared-vocabulary stream (App.~E, item 3), \emph{stream-time} first-mention recall (no fixed-lag protocol), general capability = mean of HellaSwag/ARC-Easy at 500 items. The Fisher gate here is the early max-normalized variant, which is effectively inert ($\alpha\approx1$) and therefore tracks persist; the median-relative variant is in Table S2.}
+\begin{tabular}{l r r r r r}\toprule
+policy & $\eta$ & first-mention recall (\%) & first-mention PPL & local recall (\%) & $\Delta$Gen (pt)\\\midrule
+base & 1e-03 & 0.92 & 4844 & 59.3 & +0.0 \\
+reset & 1e-02 & 1.02 & 4323 & 57.8 & +0.0 \\
+reset & 3e-02 & 0.77 & 23140 & 35.8 & +0.0 \\
+persist & 1e-02 & 6.70 & 440 & 62.9 & -0.3 \\
+persist & 3e-02 & 10.07 & 287 & 62.9 & +0.3 \\
+persist & 1e-01 & 3.13 & 1093 & 2.9 & -25.3 \\
+decay & 1e-02 & 1.79 & 1780 & 59.0 & +1.1 \\
+decay & 3e-02 & 2.39 & 1491 & 57.3 & -4.3 \\
+consistency & 1e-02 & 3.90 & 690 & 62.5 & +0.3 \\
+consistency & 3e-02 & 6.33 & 467 & 63.2 & +0.4 \\
+fisher & 1e-02 & 6.69 & 437 & 62.9 & +0.1 \\
+fisher & 3e-02 & 9.85 & 291 & 62.9 & +0.2 \\
+surprise & 1e-02 & 4.65 & 591 & 62.7 & +0.4 \\
+surprise & 3e-02 & 7.56 & 386 & 63.0 & +1.4 \\
+random & 1e-02 & 2.96 & 888 & 62.0 & +1.2 \\
+random & 3e-02 & 4.75 & 603 & 62.5 & +0.6 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h]\centering\small
+\caption{\textbf{Supplementary Table S2 (pre-fix stream).} Qwen3-0.6B, 200 repositories, shared-vocabulary stream; each repository's held-out file scored immediately after the repository (\emph{then}) and at stream end (\emph{end}); retention$_{1/3}$ = end$-$then over the first third of repositories. $^\dagger$equal budget (gate normalized to mean one). Fisher = median-relative gate. Because the shared vocabulary inflates every persistent policy's \emph{end} value, only the \emph{then} ordering is interpretable.}
+\begin{tabular}{l r r r r r}\toprule
+policy & $\eta$ & then (\%) & end (\%) & retention$_{1/3}$ (pt) & $\Delta$Gen (pt)\\\midrule
+base & 3e-02 & 0.73 & 0.73 & +0.00 & +0.0 \\
+persist & 3e-02 & 10.15 & 1.68 & -7.44 & -0.4 \\
+persist & 6e-02 & 11.51 & 1.32 & -8.50 & -9.9 \\
+decay & 3e-02 & 5.60 & 1.55 & -4.40 & -0.9 \\
+consistency$^\dagger$ & 3e-02 & 10.46 & 1.96 & -8.95 & -3.5 \\
+fisher$^\dagger$ & 3e-02 & 3.96 & 1.46 & -2.73 & -0.0 \\
+surprise & 3e-02 & 7.92 & 1.59 & -6.83 & +0.9 \\
+random$^\dagger$ & 3e-02 & 10.42 & 1.73 & -8.19 & -0.3 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[h]\centering\small
+\caption{\textbf{Supplementary Table S3 (pre-fix stream).} Qwen3-0.6B, 200 repositories, shared-vocabulary stream, fixed-lag protocol (\S4). Projection = GPM-style activation-subspace projection with $k$ protected directions per layer per session. The projection's higher lag-15/40 values fall within the shared-vocabulary inflation visible in \emph{every} persistent row and are not claimed (App.~F); its halved lag-0 value is the interpretable quantity.}
+\begin{tabular}{l l r r r r r}\toprule
+policy & seed & lag 0 & lag 5 & lag 15 & lag 40 & $\Delta$Gen (pt)\\\midrule
+session (fixed lag-0) & 0 & 7.10 & 0.74 & 0.76 & 0.71 & +0.0 \\
+persist & 0 & 11.01 & 3.29 & 2.23 & 1.96 & -1.2 \\
+consistency$^\dagger$ (s0) & 0 & 10.87 & 3.98 & 2.09 & 1.69 & -3.2 \\
+consistency$^\dagger$ (s1) & 1 & 10.01 & 3.24 & 1.95 & 1.53 & -3.0 \\
+random$^\dagger$ (s0) & 0 & 10.51 & 2.96 & 1.95 & 1.96 & -1.1 \\
+random$^\dagger$ (s1) & 1 & 7.51 & 1.99 & 1.85 & 1.36 & -8.9 \\
+persist + projection $k{=}64$ & 0 & 4.87 & 3.24 & 2.47 & 2.45 & -0.6 \\
+persist + projection $k{=}256$ & 0 & 1.32 & 1.30 & 1.33 & 1.47 & +1.1 \\
+\bottomrule\end{tabular}\end{table}

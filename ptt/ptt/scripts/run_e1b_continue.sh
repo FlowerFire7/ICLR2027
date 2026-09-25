@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# E1b: 剩余 10 次运行 (seed 1 和 seed 2)
+# 使用 ptt_e1b.zip 版本：5 任务 general_eval + fresh 逐仓库记录
+set -e
+cd /data/ziming_workspace/kaiyi/ICLR/ptt/ptt
+
+CACHE=results/e1/gen_before_1.7B.json
+C="--model Qwen/Qwen3-1.7B-Base --repos repos180 --eta 3e-2 --lags 0,5,15,40 \
+   --fresh_repos repos_fresh --general_limit 2000 --general_cache $CACHE"
+
+echo "=== E1b 继续运行 (seed 1-2, 5任务 general_eval) ==="
+echo "开始时间: $(date)"
+
+for s in 1 2; do
+  echo "=== Seed $s ==="
+  echo "[s${s}.1/5] base..."
+  python scripts/week3_repo.py $C --seed $s --policy base --out results/e1/base_s$s.json
+  echo "base_s$s 完成: $(date)"
+
+  echo "[s${s}.2/5] persist..."
+  python scripts/week3_repo.py $C --seed $s --policy persist --out results/e1/persist_s$s.json
+  echo "persist_s$s 完成: $(date)"
+
+  echo "[s${s}.3/5] session..."
+  python scripts/week3_repo.py $C --seed $s --policy session --out results/e1/session_s$s.json
+  echo "session_s$s 完成: $(date)"
+
+  echo "[s${s}.4/5] consistency_norm..."
+  python scripts/week3_repo.py $C --seed $s --policy consistency --alpha_norm --out results/e1/consistency_s$s.json
+  echo "consistency_s$s 完成: $(date)"
+
+  echo "[s${s}.5/5] random_norm..."
+  python scripts/week3_repo.py $C --seed $s --policy random --alpha_norm --out results/e1/random_s$s.json
+  echo "random_s$s 完成: $(date)"
+done
+
+echo "=== 生成分析 ==="
+echo "--- cluster_ci ---"
+python scripts/cluster_ci.py results/e1/*.json | tee results/e1/ci.txt
+
+echo "--- paired comparisons (per seed) ---"
+for s in 0 1 2; do
+  echo "=== Seed $s paired ===" | tee -a results/e1/paired.txt
+  echo "consistency vs random:" | tee -a results/e1/paired.txt
+  python scripts/paired.py results/e1/consistency_s$s.json results/e1/random_s$s.json | tee -a results/e1/paired.txt
+  echo "consistency vs persist:" | tee -a results/e1/paired.txt
+  python scripts/paired.py results/e1/consistency_s$s.json results/e1/persist_s$s.json | tee -a results/e1/paired.txt
+  echo "session vs persist:" | tee -a results/e1/paired.txt
+  python scripts/paired.py results/e1/session_s$s.json results/e1/persist_s$s.json | tee -a results/e1/paired.txt
+done
+
+echo "=== E1b 全部完成 ==="
+echo "结束时间: $(date)"

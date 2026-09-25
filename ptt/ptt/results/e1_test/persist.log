@@ -1,0 +1,165 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 8522.10it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Overwriting default num_fewshot of arc_easy from None to 0
+Overwriting default num_fewshot of hellaswag from None to 0
+  0%|          | 0/500 [00:00<?, ?it/s] 16%|█▌        | 81/500 [00:00<00:00, 802.53it/s] 33%|███▎      | 163/500 [00:00<00:00, 808.12it/s] 49%|████▉     | 244/500 [00:00<00:00, 808.17it/s] 65%|██████▌   | 325/500 [00:00<00:00, 808.63it/s] 81%|████████  | 406/500 [00:00<00:00, 791.54it/s] 97%|█████████▋| 486/500 [00:00<00:00, 789.63it/s]100%|██████████| 500/500 [00:00<00:00, 796.69it/s]
+  0%|          | 0/500 [00:00<?, ?it/s] 46%|████▌     | 229/500 [00:00<00:00, 2283.33it/s] 92%|█████████▏| 458/500 [00:00<00:00, 2286.67it/s]100%|██████████| 500/500 [00:00<00:00, 2282.84it/s]
+Running loglikelihood requests:   0%|          | 0/3998 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 1/3998 [00:00<25:16,  2.64it/s]Running loglikelihood requests:   1%|          | 34/3998 [00:00<00:44, 90.00it/s]Running loglikelihood requests:   2%|▏         | 66/3998 [00:00<00:25, 153.40it/s]Running loglikelihood requests:   3%|▎         | 106/3998 [00:00<00:18, 209.31it/s]Running loglikelihood requests:   4%|▎         | 146/3998 [00:00<00:15, 246.57it/s]Running loglikelihood requests:   5%|▍         | 186/3998 [00:00<00:13, 274.55it/s]Running loglikelihood requests:   6%|▌         | 226/3998 [00:01<00:12, 306.39it/s]Running loglikelihood requests:   7%|▋         | 266/3998 [00:01<00:11, 330.33it/s]Running loglikelihood requests:   8%|▊         | 307/3998 [00:01<00:10, 351.19it/s]Running loglikelihood requests:   9%|▊         | 347/3998 [00:01<00:10, 363.88it/s]Running loglikelihood requests:  10%|▉         | 387/3998 [00:01<00:09, 373.34it/s]Running loglikelihood requests:  11%|█         | 430/3998 [00:01<00:09, 388.86it/s]Running loglikelihood requests:  12%|█▏        | 472/3998 [00:01<00:08, 397.24it/s]Running loglikelihood requests:  13%|█▎        | 514/3998 [00:01<00:08, 403.70it/s]Running loglikelihood requests:  14%|█▍        | 557/3998 [00:01<00:08, 410.93it/s]Running loglikelihood requests:  15%|█▌        | 600/3998 [00:01<00:08, 416.17it/s]Running loglikelihood requests:  16%|█▌        | 643/3998 [00:02<00:07, 420.10it/s]Running loglikelihood requests:  17%|█▋        | 686/3998 [00:02<00:07, 422.57it/s]Running loglikelihood requests:  18%|█▊        | 729/3998 [00:02<00:07, 424.39it/s]Running loglikelihood requests:  19%|█▉        | 772/3998 [00:02<00:08, 402.54it/s]Running loglikelihood requests:  21%|██        | 820/3998 [00:02<00:07, 404.00it/s]Running loglikelihood requests:  22%|██▏       | 868/3998 [00:02<00:07, 404.84it/s]Running loglikelihood requests:  23%|██▎       | 916/3998 [00:02<00:07, 405.46it/s]Running loglikelihood requests:  24%|██▍       | 964/3998 [00:02<00:07, 405.92it/s]Running loglikelihood requests:  25%|██▌       | 1012/3998 [00:02<00:07, 406.23it/s]Running loglikelihood requests:  27%|██▋       | 1061/3998 [00:03<00:07, 408.28it/s]Running loglikelihood requests:  28%|██▊       | 1109/3998 [00:03<00:07, 407.22it/s]Running loglikelihood requests:  29%|██▉       | 1160/3998 [00:03<00:06, 414.67it/s]Running loglikelihood requests:  30%|███       | 1215/3998 [00:03<00:06, 430.10it/s]Running loglikelihood requests:  32%|███▏      | 1263/3998 [00:03<00:06, 423.35it/s]Running loglikelihood requests:  33%|███▎      | 1311/3998 [00:03<00:06, 419.39it/s]Running loglikelihood requests:  34%|███▍      | 1359/3998 [00:03<00:06, 415.98it/s]Running loglikelihood requests:  35%|███▌      | 1411/3998 [00:03<00:06, 423.86it/s]Running loglikelihood requests:  36%|███▋      | 1459/3998 [00:04<00:06, 419.71it/s]Running loglikelihood requests:  38%|███▊      | 1511/3998 [00:04<00:05, 426.65it/s]Running loglikelihood requests:  39%|███▉      | 1559/3998 [00:04<00:05, 421.39it/s]Running loglikelihood requests:  40%|████      | 1607/3998 [00:04<00:05, 417.63it/s]Running loglikelihood requests:  41%|████▏     | 1655/3998 [00:04<00:05, 415.22it/s]Running loglikelihood requests:  43%|████▎     | 1705/3998 [00:04<00:05, 418.56it/s]Running loglikelihood requests:  44%|████▍     | 1756/3998 [00:04<00:05, 422.92it/s]Running loglikelihood requests:  45%|████▌     | 1804/3998 [00:04<00:05, 418.49it/s]Running loglikelihood requests:  46%|████▋     | 1858/3998 [00:04<00:04, 430.78it/s]Running loglikelihood requests:  48%|████▊     | 1907/3998 [00:05<00:04, 426.93it/s]Running loglikelihood requests:  49%|████▉     | 1951/3998 [00:05<00:04, 430.34it/s]Running loglikelihood requests:  50%|████▉     | 1997/3998 [00:05<00:04, 417.09it/s]Running loglikelihood requests:  51%|█████     | 2045/3998 [00:05<00:04, 413.66it/s]Running loglikelihood requests:  52%|█████▏    | 2095/3998 [00:05<00:04, 416.76it/s]Running loglikelihood requests:  54%|█████▎    | 2144/3998 [00:05<00:04, 416.14it/s]Running loglikelihood requests:  55%|█████▍    | 2195/3998 [00:05<00:04, 420.82it/s]Running loglikelihood requests:  56%|█████▌    | 2238/3998 [00:05<00:04, 414.94it/s]Running loglikelihood requests:  57%|█████▋    | 2289/3998 [00:06<00:04, 422.25it/s]Running loglikelihood requests:  59%|█████▊    | 2340/3998 [00:06<00:03, 427.12it/s]Running loglikelihood requests:  60%|█████▉    | 2396/3998 [00:06<00:03, 442.15it/s]Running loglikelihood requests:  61%|██████    | 2447/3998 [00:06<00:03, 440.18it/s]Running loglikelihood requests:  62%|██████▏   | 2498/3998 [00:06<00:03, 439.18it/s]Running loglikelihood requests:  64%|██████▎   | 2546/3998 [00:06<00:03, 430.61it/s]Running loglikelihood requests:  65%|██████▌   | 2603/3998 [00:06<00:03, 447.34it/s]Running loglikelihood requests:  66%|██████▋   | 2655/3998 [00:06<00:03, 446.51it/s]Running loglikelihood requests:  68%|██████▊   | 2711/3998 [00:06<00:02, 456.39it/s]Running loglikelihood requests:  69%|██████▉   | 2759/3998 [00:07<00:02, 443.38it/s]Running loglikelihood requests:  70%|███████   | 2810/3998 [00:07<00:02, 442.01it/s]Running loglikelihood requests:  72%|███████▏  | 2861/3998 [00:07<00:02, 439.02it/s]Running loglikelihood requests:  73%|███████▎  | 2915/3998 [00:07<00:02, 446.03it/s]Running loglikelihood requests:  74%|███████▍  | 2963/3998 [00:07<00:02, 436.31it/s]Running loglikelihood requests:  75%|███████▌  | 3014/3998 [00:07<00:02, 437.13it/s]Running loglikelihood requests:  77%|███████▋  | 3065/3998 [00:07<00:02, 437.31it/s]Running loglikelihood requests:  78%|███████▊  | 3115/3998 [00:07<00:02, 435.45it/s]Running loglikelihood requests:  79%|███████▉  | 3177/3998 [00:07<00:01, 464.19it/s]Running loglikelihood requests:  81%|████████  | 3234/3998 [00:08<00:01, 471.36it/s]Running loglikelihood requests:  82%|████████▏ | 3282/3998 [00:08<00:01, 454.46it/s]Running loglikelihood requests:  83%|████████▎ | 3331/3998 [00:08<00:01, 445.18it/s]Running loglikelihood requests:  85%|████████▍ | 3391/3998 [00:08<00:01, 466.84it/s]Running loglikelihood requests:  86%|████████▋ | 3450/3998 [00:08<00:01, 478.27it/s]Running loglikelihood requests:  88%|████████▊ | 3508/3998 [00:08<00:01, 484.59it/s]Running loglikelihood requests:  89%|████████▉ | 3559/3998 [00:08<00:00, 471.53it/s]Running loglikelihood requests:  90%|█████████ | 3613/3998 [00:08<00:00, 469.42it/s]Running loglikelihood requests:  92%|█████████▏| 3671/3998 [00:09<00:00, 478.19it/s]Running loglikelihood requests:  93%|█████████▎| 3728/3998 [00:09<00:00, 482.22it/s]Running loglikelihood requests:  95%|█████████▍| 3791/3998 [00:09<00:00, 499.63it/s]Running loglikelihood requests:  96%|█████████▋| 3855/3998 [00:09<00:00, 514.88it/s]Running loglikelihood requests:  98%|█████████▊| 3927/3998 [00:09<00:00, 545.61it/s]Running loglikelihood requests: 100%|█████████▉| 3992/3998 [00:09<00:00, 554.09it/s]Running loglikelihood requests: 100%|██████████| 3998/3998 [00:09<00:00, 415.82it/s]
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+general BEFORE: {'arc_easy': 0.672, 'hellaswag': 0.58}
+[doc 50/69] 1ove9__antenna-forge/yaf_core/ports/cad_ ppl=1692.25 xfile_acc=0.000(n=1) xrep_acc=0.000(n=10) gslow=4.029 t=41s
+[doc 50/79] ATH-MaaS__Pixelle-MCP/pixelle/cli/comman ppl=1238.09 xfile_acc=0.000(n=2) xrep_acc=0.000(n=1) local_acc=0.000(n=12) gslow=4.129 t=22s
+[doc 50/88] Bhanunamikaze__Agentic-SEO-Skill/scripts ppl=2.69 xfile_acc=0.000(n=1) xrep_acc=0.800(n=5) local_acc=0.900(n=10) gslow=4.310 t=41s
+--- repo 10/180 t=261s
+[doc 50/57] Dataojitori__nocturne_memory/backend/tex ppl=4.88 xfile_acc=0.000(n=1) xrep_acc=0.667(n=12) local_acc=0.600(n=5) gslow=4.392 t=38s
+--- repo 20/180 t=403s
+[doc 50/174] Lazarus-AI__clearwing/clearwing/agent/to ppl=3.56 xfile_acc=0.031(n=32) xrep_acc=0.514(n=107) local_acc=0.214(n=14) gslow=4.452 t=42s
+[doc 100/174] Lazarus-AI__clearwing/clearwing/agent/to ppl=2.52 xfile_acc=0.083(n=12) xrep_acc=0.661(n=56) local_acc=0.765(n=170) gslow=4.480 t=95s
+[doc 150/174] Lazarus-AI__clearwing/clearwing/remediat ppl=7.41 xfile_acc=0.059(n=17) xrep_acc=0.680(n=25) gslow=4.502 t=136s
+[doc 50/195] LeonChaoX__qinyan-academic-skills/skills ppl=2.48 local_acc=0.571(n=7) gslow=4.532 t=50s
+[doc 100/195] LeonChaoX__qinyan-academic-skills/skills ppl=2.31 xfile_acc=0.000(n=3) xrep_acc=0.714(n=14) local_acc=0.444(n=9) gslow=4.546 t=91s
+[doc 150/195] LeonChaoX__qinyan-academic-skills/skills ppl=2.06 xfile_acc=0.000(n=2) xrep_acc=1.000(n=13) local_acc=0.706(n=17) gslow=4.562 t=140s
+--- repo 30/180 t=821s
+[doc 50/85] MiaAI-Lab__DeepSeek-v4-Flash-DSpark-2x-D ppl=3.06 xfile_acc=0.000(n=2) xrep_acc=0.667(n=6) local_acc=0.690(n=42) gslow=4.622 t=75s
+[doc 50/191] Mibayy__token-savior/src/token_savior/co ppl=4.57 xfile_acc=0.000(n=1) xrep_acc=0.000(n=2) local_acc=0.833(n=12) gslow=4.663 t=40s
+[doc 100/191] Mibayy__token-savior/src/token_savior/la ppl=4.20 xfile_acc=0.000(n=3) xrep_acc=0.750(n=4) local_acc=0.826(n=23) gslow=4.685 t=87s
+[doc 150/191] Mibayy__token-savior/src/token_savior/pr ppl=3.56 xfile_acc=0.039(n=51) xrep_acc=0.778(n=343) local_acc=0.481(n=52) gslow=4.709 t=132s
+[doc 50/183] P0luz__Ombre-Brain/src/ombrebrain/decisi ppl=4.83 xfile_acc=0.000(n=5) xrep_acc=0.889(n=9) local_acc=0.833(n=6) gslow=4.784 t=46s
+[doc 100/183] P0luz__Ombre-Brain/src/ombrebrain/projec ppl=2.06 xfile_acc=0.143(n=14) xrep_acc=0.737(n=38) local_acc=0.912(n=170) gslow=4.795 t=70s
+[doc 150/183] P0luz__Ombre-Brain/src/tools/_common.py  ppl=5.39 xfile_acc=0.111(n=45) xrep_acc=0.782(n=243) local_acc=0.388(n=49) gslow=4.826 t=125s
+--- repo 40/180 t=1364s
+[doc 50/183] PatterAI__Patter/libraries/python/getpat ppl=4.66 xfile_acc=0.000(n=2) xrep_acc=0.750(n=4) local_acc=1.000(n=1) gslow=4.877 t=48s
+[doc 100/183] PatterAI__Patter/libraries/python/getpat ppl=3.60 xfile_acc=0.286(n=14) xrep_acc=0.870(n=54) local_acc=0.833(n=36) gslow=4.904 t=105s
+[doc 150/183] PatterAI__Patter/libraries/python/getpat ppl=4.88 xfile_acc=0.000(n=3) xrep_acc=1.000(n=7) local_acc=1.000(n=3) gslow=4.931 t=155s
+[doc 50/59] Rishurajgautam24__free-claude-code/provi ppl=2.83 xfile_acc=0.062(n=16) xrep_acc=0.755(n=53) local_acc=0.739(n=23) gslow=4.958 t=29s
+--- repo 50/180 t=1746s
+Token indices sequence length is longer than the specified maximum sequence length for this model (255236 > 131072). Running this sequence through the model will result in indexing errors
+[doc 50/98] Skyvern-AI__rustwright/python/rustwright ppl=1.50 xfile_acc=1.000(n=1) xrep_acc=1.000(n=2) local_acc=1.000(n=1) gslow=4.992 t=42s
+[doc 50/148] TNT-Likely__PanWatch/src/collectors/even ppl=4.03 xfile_acc=0.125(n=16) xrep_acc=0.914(n=35) local_acc=0.784(n=51) gslow=5.033 t=42s
+[doc 100/148] TNT-Likely__PanWatch/src/collectors/capi ppl=3.11 xfile_acc=0.000(n=9) xrep_acc=0.789(n=19) local_acc=0.930(n=43) gslow=5.057 t=98s
+[doc 50/95] aklofas__kicad-happy/skills/kicad/script ppl=2.88 xfile_acc=0.100(n=20) xrep_acc=0.918(n=183) local_acc=0.489(n=47) gslow=5.149 t=79s
+--- repo 60/180 t=2361s
+[doc 50/63] alirezarezvani__claude-code-skill-factor ppl=2.02 xfile_acc=0.000(n=2) xrep_acc=0.875(n=8) local_acc=0.821(n=28) gslow=5.192 t=73s
+[doc 50/72] apple__ml-simplefold/src/simplefold/mode ppl=1.96 xfile_acc=0.000(n=2) xrep_acc=0.500(n=4) local_acc=1.000(n=8) gslow=5.205 t=35s
+[doc 50/95] banteg__takopi/src/takopi/telegram/backe ppl=5.33 xfile_acc=0.032(n=31) xrep_acc=0.678(n=87) local_acc=0.556(n=9) gslow=5.224 t=32s
+--- repo 70/180 t=2634s
+[doc 50/57] btseytlin__hr-breaker/src/hr_breaker/ser ppl=6.75  gslow=5.256 t=25s
+[doc 50/68] china-qijizhifeng__agentic-harness-engin ppl=3.27  gslow=5.266 t=36s
+[doc 50/193] chunkhound__chunkhound/chunkhound/parser ppl=4.16 xfile_acc=0.059(n=17) xrep_acc=0.761(n=180) local_acc=0.812(n=69) gslow=5.286 t=45s
+[doc 100/193] chunkhound__chunkhound/chunkhound/utils/ ppl=4.02 xfile_acc=0.364(n=11) xrep_acc=0.714(n=21) local_acc=0.000(n=2) gslow=5.302 t=107s
+[doc 150/193] chunkhound__chunkhound/chunkhound/servic ppl=2.09 xfile_acc=0.200(n=15) xrep_acc=0.695(n=105) local_acc=0.588(n=85) gslow=5.319 t=160s
+--- repo 80/180 t=3070s
+[doc 50/70] fabriziosalmi__certmate/modules/core/pri ppl=3.14 xfile_acc=0.333(n=9) xrep_acc=0.765(n=51) local_acc=0.667(n=54) gslow=5.424 t=79s
+[doc 50/199] fancyboi999__ai-engineering-from-scratch ppl=2.40 xfile_acc=0.000(n=4) xrep_acc=0.769(n=13) local_acc=0.636(n=44) gslow=5.450 t=38s
+[doc 100/199] fancyboi999__ai-engineering-from-scratch ppl=2.02 xfile_acc=0.087(n=23) xrep_acc=0.762(n=42) local_acc=0.885(n=26) gslow=5.469 t=122s
+[doc 150/199] fancyboi999__ai-engineering-from-scratch ppl=3.58 xfile_acc=0.000(n=3) xrep_acc=0.571(n=7) local_acc=0.769(n=13) gslow=5.478 t=142s
+--- repo 90/180 t=3509s
+[doc 50/75] finvfamily__finshare/finshare/stock/fina ppl=1.75 xfile_acc=0.500(n=2) xrep_acc=1.000(n=3) local_acc=1.000(n=6) gslow=5.508 t=36s
+[doc 50/91] freshtechbro__claudedesignskills/plugins ppl=1.52 local_acc=0.714(n=14) gslow=5.527 t=66s
+[doc 50/195] fuyuxiang__echo-agent/echo_agent/memory/ ppl=7.26 xfile_acc=0.000(n=10) xrep_acc=0.583(n=12) gslow=5.568 t=41s
+[doc 100/195] fuyuxiang__echo-agent/echo_agent/securit ppl=6.53 xfile_acc=0.111(n=18) xrep_acc=0.553(n=47) local_acc=0.333(n=15) gslow=5.590 t=94s
+[doc 150/195] fuyuxiang__echo-agent/echo_agent/agent/t ppl=3.04 xfile_acc=0.222(n=45) xrep_acc=0.817(n=120) local_acc=0.250(n=4) gslow=5.608 t=138s
+[doc 50/83] goodroot__hyprwhspr/lib/src/dependency_m ppl=4.01 xfile_acc=0.000(n=2) xrep_acc=0.833(n=6) local_acc=0.673(n=49) gslow=5.657 t=57s
+[doc 50/199] hardness1020__awesome-agent-architecture ppl=4.35 xfile_acc=0.500(n=4) xrep_acc=0.750(n=8) local_acc=0.750(n=28) gslow=5.678 t=10s
+[doc 100/199] hardness1020__awesome-agent-architecture ppl=3.98 local_acc=1.000(n=12) gslow=5.704 t=25s
+[doc 150/199] hardness1020__awesome-agent-architecture ppl=1.47 xfile_acc=0.833(n=6) xrep_acc=1.000(n=18) local_acc=1.000(n=27) gslow=5.729 t=41s
+[doc 50/179] icey1287__SuperMew/backend/agent/memory. ppl=5.61 xfile_acc=0.026(n=39) xrep_acc=0.585(n=53) local_acc=1.000(n=3) gslow=5.789 t=74s
+[doc 100/179] icey1287__SuperMew/backend/api/routes/mo ppl=2.73 xfile_acc=0.206(n=34) xrep_acc=0.757(n=70) local_acc=1.000(n=15) gslow=5.806 t=120s
+[doc 150/179] icey1287__SuperMew/backend/workers/index ppl=3.60 xfile_acc=0.087(n=46) xrep_acc=0.673(n=49) local_acc=0.833(n=6) gslow=5.826 t=158s
+--- repo 100/180 t=4240s
+[doc 50/164] learntocloud__learn-to-cloud-app/api/ale ppl=3.62 local_acc=0.333(n=9) gslow=5.876 t=15s
+[doc 100/164] learntocloud__learn-to-cloud-app/package ppl=3.72 xfile_acc=0.000(n=3) xrep_acc=0.750(n=16) local_acc=0.705(n=112) gslow=5.887 t=41s
+[doc 150/164] learntocloud__learn-to-cloud-app/package ppl=8.55 xfile_acc=0.053(n=19) xrep_acc=0.000(n=3) local_acc=1.000(n=3) gslow=5.897 t=71s
+--- repo 110/180 t=4483s
+[doc 50/184] math-inc__OpenGauss/gateway/platforms/ho ppl=2.70 xfile_acc=0.034(n=29) xrep_acc=0.705(n=61) local_acc=0.800(n=30) gslow=5.939 t=73s
+[doc 100/184] math-inc__OpenGauss/agent/prompt_builder ppl=3.76 xfile_acc=0.176(n=17) xrep_acc=0.726(n=73) local_acc=0.792(n=24) gslow=5.964 t=165s
+[doc 150/184] math-inc__OpenGauss/gauss_cli/claw.py    ppl=2.83 xfile_acc=0.185(n=27) xrep_acc=0.747(n=79) local_acc=0.625(n=8) gslow=5.983 t=227s
+--- repo 120/180 t=4890s
+[doc 50/67] mattmireles__gemma-tuner-multimodal/gemm ppl=5.24 xfile_acc=0.333(n=3) xrep_acc=1.000(n=5) local_acc=0.556(n=9) gslow=6.005 t=59s
+[doc 50/183] mit-han-lab__streaming-vlm/streaming_vlm ppl=2.19 xfile_acc=0.000(n=3) xrep_acc=0.696(n=23) local_acc=0.824(n=34) gslow=6.021 t=37s
+[doc 100/183] mit-han-lab__streaming-vlm/streaming_vlm ppl=2.52 xfile_acc=0.250(n=4) xrep_acc=0.643(n=14) local_acc=0.857(n=21) gslow=6.041 t=110s
+[doc 150/183] mit-han-lab__streaming-vlm/streaming_vlm ppl=2.62 local_acc=1.000(n=6) gslow=6.046 t=144s
+[doc 50/158] mnemox-ai__tradememory-protocol/scripts/ ppl=2.05 xfile_acc=0.167(n=12) xrep_acc=0.733(n=15) local_acc=0.810(n=42) gslow=6.068 t=65s
+[doc 100/158] mnemox-ai__tradememory-protocol/src/trad ppl=3.21 xfile_acc=0.083(n=12) xrep_acc=0.795(n=39) local_acc=0.753(n=150) gslow=6.089 t=120s
+[doc 150/158] mnemox-ai__tradememory-protocol/src/trad ppl=3.60 xfile_acc=0.087(n=46) xrep_acc=0.651(n=83) local_acc=0.745(n=47) gslow=6.105 t=166s
+[doc 50/71] myfanhua__turb-gpt-free-register/core/re ppl=3.92 xfile_acc=0.000(n=22) xrep_acc=0.760(n=171) local_acc=0.374(n=99) gslow=6.132 t=65s
+--- repo 130/180 t=5474s
+[doc 50/54] oomol-lab__epub-translator/scripts/check ppl=2.64 xfile_acc=0.000(n=6) xrep_acc=0.667(n=6) local_acc=0.800(n=5) gslow=6.199 t=19s
+--- repo 140/180 t=5626s
+[doc 50/93] pikpikcu__airecon/airecon/proxy/agent/lo ppl=2.63 xfile_acc=0.200(n=10) xrep_acc=0.927(n=41) local_acc=0.845(n=84) gslow=6.227 t=95s
+[doc 50/172] pydantic__pydantic-ai-harness/pydantic_a ppl=5.65 xfile_acc=0.154(n=13) xrep_acc=0.438(n=16) local_acc=0.689(n=45) gslow=6.259 t=43s
+[doc 100/172] pydantic__pydantic-ai-harness/pydantic_a ppl=4.17 xfile_acc=0.000(n=10) xrep_acc=0.787(n=89) local_acc=0.783(n=92) gslow=6.278 t=81s
+[doc 150/172] pydantic__pydantic-ai-harness/pydantic_a ppl=9.93 xfile_acc=0.000(n=3) xrep_acc=1.000(n=1) gslow=6.293 t=123s
+--- repo 150/180 t=5990s
+[doc 50/157] sgl-project__SpecForge/specforge/utils.p ppl=4.04 xfile_acc=0.000(n=4) xrep_acc=1.000(n=11) local_acc=0.750(n=12) gslow=6.336 t=35s
+[doc 100/157] sgl-project__SpecForge/specforge/runtime ppl=3.48 xfile_acc=0.048(n=21) xrep_acc=0.667(n=57) local_acc=0.688(n=16) gslow=6.350 t=82s
+[doc 150/157] sgl-project__SpecForge/specforge/offline ppl=3.77 xfile_acc=0.118(n=17) xrep_acc=0.714(n=42) local_acc=1.000(n=4) gslow=6.365 t=130s
+--- repo 160/180 t=6310s
+[doc 50/85] solatis__claude-config/skills/scripts/sk ppl=4.60 xfile_acc=0.500(n=4) xrep_acc=0.667(n=3) local_acc=0.500(n=4) gslow=6.389 t=42s
+[doc 50/88] stephenschoettler__hermes-lcm/engine.py  ppl=6.83 xfile_acc=0.031(n=131) xrep_acc=0.689(n=106) local_acc=0.611(n=18) gslow=6.431 t=97s
+[doc 50/58] study8677__repobrain/engine/repobrain_en ppl=4.08 xfile_acc=0.167(n=6) xrep_acc=1.000(n=1) gslow=6.470 t=51s
+--- repo 170/180 t=6721s
+[doc 50/53] ucsdsysnet__dontlookup/parser/parsers/ud ppl=2.45 xfile_acc=0.182(n=11) xrep_acc=0.875(n=8) local_acc=0.909(n=11) gslow=6.500 t=17s
+[doc 50/131] ufy2024__AuC/auc/roles/catalog.py        ppl=4.20 xfile_acc=0.000(n=6) xrep_acc=0.500(n=10) local_acc=0.758(n=33) gslow=6.509 t=29s
+[doc 100/131] ufy2024__AuC/auc/web/model_settings.py   ppl=3.66 xfile_acc=0.057(n=35) xrep_acc=0.613(n=106) local_acc=0.200(n=5) gslow=6.523 t=66s
+[doc 50/65] uluckyXH__OpenMOSS/app/services/admin_ta ppl=1.74 xfile_acc=0.162(n=37) xrep_acc=0.875(n=353) local_acc=0.593(n=81) gslow=6.541 t=27s
+[doc 50/53] vamplabAI__sgr-agent-core/sgr_agent_core ppl=5.51 xfile_acc=0.083(n=12) xrep_acc=0.667(n=9) local_acc=0.875(n=8) gslow=6.549 t=22s
+--- repo 180/180 t=6951s
+fresh-repo transfer: {'acc': 0.0196078431372549, 'n': 153, 'repos': 20}
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Overwriting default num_fewshot of arc_easy from None to 0
+Overwriting default num_fewshot of hellaswag from None to 0
+  0%|          | 0/500 [00:00<?, ?it/s] 16%|█▌        | 80/500 [00:00<00:00, 798.02it/s] 32%|███▏      | 161/500 [00:00<00:00, 804.12it/s] 48%|████▊     | 242/500 [00:00<00:00, 806.13it/s] 65%|██████▍   | 324/500 [00:00<00:00, 808.36it/s] 81%|████████  | 406/500 [00:00<00:00, 810.86it/s] 98%|█████████▊| 488/500 [00:00<00:00, 812.40it/s]100%|██████████| 500/500 [00:00<00:00, 809.31it/s]
+  0%|          | 0/500 [00:00<?, ?it/s] 47%|████▋     | 233/500 [00:00<00:00, 2321.20it/s] 94%|█████████▎| 468/500 [00:00<00:00, 2333.88it/s]100%|██████████| 500/500 [00:00<00:00, 2330.89it/s]
+Running loglikelihood requests:   0%|          | 0/3998 [00:00<?, ?it/s]Running loglikelihood requests:   0%|          | 17/3998 [00:00<00:23, 166.05it/s]Running loglikelihood requests:   1%|▏         | 50/3998 [00:00<00:15, 255.87it/s]Running loglikelihood requests:   2%|▏         | 84/3998 [00:00<00:13, 293.62it/s]Running loglikelihood requests:   3%|▎         | 122/3998 [00:00<00:12, 300.28it/s]Running loglikelihood requests:   4%|▍         | 162/3998 [00:00<00:12, 310.97it/s]Running loglikelihood requests:   5%|▌         | 202/3998 [00:00<00:11, 332.11it/s]Running loglikelihood requests:   6%|▌         | 242/3998 [00:00<00:10, 350.20it/s]Running loglikelihood requests:   7%|▋         | 283/3998 [00:00<00:10, 365.83it/s]Running loglikelihood requests:   8%|▊         | 323/3998 [00:00<00:09, 374.23it/s]Running loglikelihood requests:   9%|▉         | 363/3998 [00:01<00:09, 380.77it/s]Running loglikelihood requests:  10%|█         | 403/3998 [00:01<00:09, 385.22it/s]Running loglikelihood requests:  11%|█         | 446/3998 [00:01<00:08, 397.66it/s]Running loglikelihood requests:  12%|█▏        | 488/3998 [00:01<00:08, 403.39it/s]Running loglikelihood requests:  13%|█▎        | 530/3998 [00:01<00:08, 408.06it/s]Running loglikelihood requests:  14%|█▍        | 573/3998 [00:01<00:08, 414.21it/s]Running loglikelihood requests:  15%|█▌        | 616/3998 [00:01<00:08, 418.24it/s]Running loglikelihood requests:  16%|█▋        | 659/3998 [00:01<00:07, 421.32it/s]Running loglikelihood requests:  18%|█▊        | 702/3998 [00:01<00:07, 423.44it/s]Running loglikelihood requests:  19%|█▊        | 745/3998 [00:01<00:07, 424.85it/s]Running loglikelihood requests:  20%|█▉        | 788/3998 [00:02<00:07, 403.01it/s]Running loglikelihood requests:  21%|██        | 836/3998 [00:02<00:07, 403.59it/s]Running loglikelihood requests:  22%|██▏       | 884/3998 [00:02<00:07, 403.69it/s]Running loglikelihood requests:  23%|██▎       | 932/3998 [00:02<00:07, 404.28it/s]Running loglikelihood requests:  25%|██▍       | 980/3998 [00:02<00:07, 404.47it/s]Running loglikelihood requests:  26%|██▌       | 1028/3998 [00:02<00:07, 404.56it/s]Running loglikelihood requests:  27%|██▋       | 1077/3998 [00:02<00:07, 406.96it/s]Running loglikelihood requests:  28%|██▊       | 1126/3998 [00:02<00:06, 429.09it/s]Running loglikelihood requests:  29%|██▉       | 1170/3998 [00:03<00:06, 411.25it/s]Running loglikelihood requests:  31%|███       | 1223/3998 [00:03<00:06, 422.15it/s]Running loglikelihood requests:  32%|███▏      | 1271/3998 [00:03<00:06, 416.61it/s]Running loglikelihood requests:  33%|███▎      | 1319/3998 [00:03<00:06, 413.23it/s]Running loglikelihood requests:  34%|███▍      | 1367/3998 [00:03<00:06, 410.74it/s]Running loglikelihood requests:  35%|███▌      | 1419/3998 [00:03<00:06, 419.02it/s]Running loglikelihood requests:  37%|███▋      | 1467/3998 [00:03<00:06, 414.98it/s]Running loglikelihood requests:  38%|███▊      | 1519/3998 [00:03<00:05, 422.25it/s]Running loglikelihood requests:  39%|███▉      | 1567/3998 [00:03<00:05, 417.69it/s]Running loglikelihood requests:  40%|████      | 1615/3998 [00:04<00:05, 414.17it/s]Running loglikelihood requests:  42%|████▏     | 1663/3998 [00:04<00:05, 411.63it/s]Running loglikelihood requests:  43%|████▎     | 1713/3998 [00:04<00:05, 414.63it/s]Running loglikelihood requests:  44%|████▍     | 1764/3998 [00:04<00:05, 419.51it/s]Running loglikelihood requests:  45%|████▌     | 1812/3998 [00:04<00:05, 415.34it/s]Running loglikelihood requests:  47%|████▋     | 1867/3998 [00:04<00:04, 429.75it/s]Running loglikelihood requests:  48%|████▊     | 1915/3998 [00:04<00:04, 422.42it/s]Running loglikelihood requests:  49%|████▉     | 1965/3998 [00:04<00:04, 422.58it/s]Running loglikelihood requests:  50%|█████     | 2013/3998 [00:05<00:04, 417.25it/s]Running loglikelihood requests:  52%|█████▏    | 2061/3998 [00:05<00:04, 414.43it/s]Running loglikelihood requests:  53%|█████▎    | 2111/3998 [00:05<00:04, 417.02it/s]Running loglikelihood requests:  54%|█████▍    | 2160/3998 [00:05<00:04, 416.82it/s]Running loglikelihood requests:  55%|█████▌    | 2211/3998 [00:05<00:04, 421.36it/s]Running loglikelihood requests:  57%|█████▋    | 2259/3998 [00:05<00:04, 419.12it/s]Running loglikelihood requests:  58%|█████▊    | 2316/3998 [00:05<00:03, 439.49it/s]Running loglikelihood requests:  59%|█████▉    | 2367/3998 [00:05<00:03, 438.77it/s]Running loglikelihood requests:  61%|██████    | 2420/3998 [00:05<00:03, 443.07it/s]Running loglikelihood requests:  62%|██████▏   | 2474/3998 [00:06<00:03, 448.96it/s]Running loglikelihood requests:  63%|██████▎   | 2522/3998 [00:06<00:03, 437.93it/s]Running loglikelihood requests:  64%|██████▍   | 2576/3998 [00:06<00:03, 444.91it/s]Running loglikelihood requests:  66%|██████▌   | 2631/3998 [00:06<00:03, 452.09it/s]Running loglikelihood requests:  67%|██████▋   | 2682/3998 [00:06<00:02, 447.52it/s]Running loglikelihood requests:  68%|██████▊   | 2735/3998 [00:06<00:02, 449.42it/s]Running loglikelihood requests:  70%|██████▉   | 2786/3998 [00:06<00:02, 445.98it/s]Running loglikelihood requests:  71%|███████   | 2834/3998 [00:06<00:02, 436.19it/s]Running loglikelihood requests:  72%|███████▏  | 2888/3998 [00:07<00:02, 444.16it/s]Running loglikelihood requests:  74%|███████▎  | 2939/3998 [00:07<00:02, 442.46it/s]Running loglikelihood requests:  75%|███████▍  | 2987/3998 [00:07<00:02, 434.23it/s]Running loglikelihood requests:  76%|███████▌  | 3038/3998 [00:07<00:02, 435.98it/s]Running loglikelihood requests:  77%|███████▋  | 3091/3998 [00:07<00:02, 443.01it/s]Running loglikelihood requests:  79%|███████▊  | 3139/3998 [00:07<00:01, 435.53it/s]Running loglikelihood requests:  80%|████████  | 3205/3998 [00:07<00:01, 475.09it/s]Running loglikelihood requests:  81%|████████▏ | 3258/3998 [00:07<00:01, 470.44it/s]Running loglikelihood requests:  83%|████████▎ | 3307/3998 [00:07<00:01, 457.57it/s]Running loglikelihood requests:  84%|████████▍ | 3364/3998 [00:08<00:01, 468.52it/s]Running loglikelihood requests:  86%|████████▌ | 3421/3998 [00:08<00:01, 476.13it/s]Running loglikelihood requests:  87%|████████▋ | 3480/3998 [00:08<00:01, 486.60it/s]Running loglikelihood requests:  88%|████████▊ | 3532/3998 [00:08<00:00, 476.69it/s]Running loglikelihood requests:  90%|████████▉ | 3588/3998 [00:08<00:00, 479.35it/s]Running loglikelihood requests:  91%|█████████ | 3642/3998 [00:08<00:00, 476.51it/s]Running loglikelihood requests:  93%|█████████▎| 3700/3998 [00:08<00:00, 481.75it/s]Running loglikelihood requests:  94%|█████████▍| 3760/3998 [00:08<00:00, 493.04it/s]Running loglikelihood requests:  96%|█████████▌| 3821/3998 [00:08<00:00, 504.08it/s]Running loglikelihood requests:  97%|█████████▋| 3892/3998 [00:09<00:00, 536.44it/s]Running loglikelihood requests:  99%|█████████▉| 3970/3998 [00:09<00:00, 576.39it/s]Running loglikelihood requests: 100%|██████████| 3998/3998 [00:09<00:00, 431.87it/s]
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+general AFTER : {'arc_easy': 0.706, 'hellaswag': 0.544}
+{
+  "policy": "persist",
+  "eta": 0.03,
+  "alpha_norm": false,
+  "gamma": 1.0,
+  "project_k": 0,
+  "basis_k_final": 0.0,
+  "acc_then": 0.06552567237163814,
+  "acc_end": 0.015158924205378973,
+  "retention": -0.05036674816625917,
+  "retention_first_third": -0.03859060402684564,
+  "lags": {
+    "0": [
+      0.06552567237163814,
+      124
+    ],
+    "5": [
+      0.026060296371997957,
+      120
+    ],
+    "15": [
+      0.016515716568993075,
+      113
+    ],
+    "40": [
+      0.01159047005795235,
+      96
+    ]
+  },
+  "fresh": {
+    "acc": 0.0196078431372549,
+    "n": 153,
+    "repos": 20
+  },
+  "general_before": {
+    "arc_easy": 0.672,
+    "hellaswag": 0.58
+  },
+  "general_after": {
+    "arc_easy": 0.706,
+    "hellaswag": 0.544
+  },
+  "wall_min": 119.82036015987396
+}

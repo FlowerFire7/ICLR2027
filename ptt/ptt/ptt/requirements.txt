@@ -1,0 +1,7 @@
+torch>=2.3
+transformers>=4.51
+numpy
+tokenizers
+# week 2+
+# lm-eval>=0.4.5
+# datasets
